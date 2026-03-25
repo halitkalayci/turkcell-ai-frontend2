@@ -1,10 +1,11 @@
 import Navbar from "./components/Navbar";
+import ProductsPage from "./pages/ProductsPage";
 
 function App() {
   return (
     <>
       <Navbar />
-      <h1>Turkcell AI Frontend</h1>
+      <ProductsPage />
     </>
   );
 }
