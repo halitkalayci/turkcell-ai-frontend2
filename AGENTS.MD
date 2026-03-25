@@ -23,6 +23,8 @@ Kod üretmeden önce şunları yapmak zorundasın;
 
 - Eğer varsa yeni eklenecek proje bağımlılıkları.
 
+- Kullanacağın yetenekler.
+
 > PLANI KULLANICI ONAYLAMADAN İMPLEMENTASYONA ASLA BAŞLAMA.
 
 #### 1.3) DOSYA YAPISI
