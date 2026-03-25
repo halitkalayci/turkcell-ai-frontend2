@@ -32,3 +32,17 @@ Kod üretmeden önce şunları yapmak zorundasın;
 - Tüm proje kodları `src/` altında olmalıdır.
 
 - Tüm AI döküman dosyaları `.github/` altında olmalıdır.
+
+#### 1.4) DOSYA OLUŞTURMA STRATEJİSİ
+
+- Asla tek seferde tüm implementasyonu yapma
+
+- Görevi birbiriyle alakalı ve bağımlılık sırasında önce gelen 5'erli batchlere böl ve her batch arası onay bekle.
+
+
+### 2) AGENT ROUTING (ZORUNLU)
+
+Aşağıdaki iş tiplerinde default agent görevi **devralmamalı**, 
+ilgili custom agent'a `runSubagent` ile yönlendirmelidir:
+
+İlgili custom agent seçimi agent'a bırakılır. Araştır ve bul. Bulamazsan default agent ile devam et.
