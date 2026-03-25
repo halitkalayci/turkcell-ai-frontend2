@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import { useAppSelector } from "../../store/hooks";
-import { selectCartItemCount } from "../../store/slices/cartSlice";
+import { selectUniqueCartItemCount } from "../../store/slices/cartSlice";
 import styles from "./Navbar.module.css";
 
 const Navbar = () => {
-  const cartItemCount = useAppSelector(selectCartItemCount);
+  const cartItemCount = useAppSelector(selectUniqueCartItemCount);
   const hasItems = cartItemCount > 0;
 
   return (
