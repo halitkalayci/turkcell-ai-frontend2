@@ -1,6 +1,9 @@
 ### AGENTS.MD
 
-Bu dosya Typescript ile yazılacak React frontend projesinin en temel anayasal kurallarını içeren dosyadır.
+Bu dosya Typescript ile yazılacak React frontend projesinin en temel 
+anayasal kurallarını içeren dosyadır.
+
+Bu proje mini bir e-ticaret ürününün ön yüz projesidir.
 
 ---
 
@@ -21,3 +24,9 @@ Kod üretmeden önce şunları yapmak zorundasın;
 - Eğer varsa yeni eklenecek proje bağımlılıkları.
 
 > PLANI KULLANICI ONAYLAMADAN İMPLEMENTASYONA ASLA BAŞLAMA.
+
+#### 1.3) DOSYA YAPISI
+
+- Tüm proje kodları `src/` altında olmalıdır.
+
+- Tüm AI döküman dosyaları `.github/` altında olmalıdır.
