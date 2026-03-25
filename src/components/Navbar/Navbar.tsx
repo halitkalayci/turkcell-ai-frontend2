@@ -1,13 +1,28 @@
+import { Link } from "react-router-dom";
+import { useAppSelector } from "../../store/hooks";
+import { selectCartItemCount } from "../../store/slices/cartSlice";
 import styles from "./Navbar.module.css";
 
 const Navbar = () => {
+  const cartItemCount = useAppSelector(selectCartItemCount);
+  const hasItems = cartItemCount > 0;
+
   return (
     <nav className={styles.navbar} role="navigation" aria-label="Ana navigasyon">
-      <div className={styles.brand}>Turkcell AI</div>
+      <Link to="/" className={styles.brand}>Turkcell AI</Link>
       <ul className={styles.navList}>
-        <li><a href="/" className={styles.navLink}>Ana Sayfa</a></li>
-        <li><a href="/urunler" className={styles.navLink}>Ürünler</a></li>
-        <li><a href="/iletisim" className={styles.navLink}>İletişim</a></li>
+        <li><Link to="/" className={styles.navLink}>Ana Sayfa</Link></li>
+        <li><Link to="/urunler" className={styles.navLink}>Ürünler</Link></li>
+        <li>
+          <Link to="/sepet" className={styles.navLink}>
+            Sepet
+            {hasItems && (
+              <span className={styles.cartBadge} aria-label={`${cartItemCount} ürün`}>
+                {cartItemCount}
+              </span>
+            )}
+          </Link>
+        </li>
       </ul>
     </nav>
   );
