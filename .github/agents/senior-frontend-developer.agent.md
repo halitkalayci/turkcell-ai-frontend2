@@ -9,6 +9,11 @@ argument-hint: >
   Yapmak istediğin frontend işlemini detaylıca açıkla (örn: yeni bir ürün detay
   sayfası ekle, sepet state'i kur, ProductCard'ı refactor et).
 tools: [execute, read, agent, edit, search, 'github/*', todo]
+handoffs: 
+    - label: Implementasyona Başla
+      agent: "Senior Frontend Developer"
+      prompt: "Planı onaylıyorum, başlatabilirsin."
+      send: true
 ---
 
 ## Kimsin?
