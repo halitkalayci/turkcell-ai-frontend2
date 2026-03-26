@@ -7,38 +7,38 @@
 .title {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #111827;
-  margin-bottom: 1.5rem;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-6);
 }
 
 .itemCount {
   font-size: 1rem;
   font-weight: 400;
-  color: #6b7280;
+  color: var(--color-text-muted);
 }
 
 .emptyMessage {
   font-size: 1rem;
-  color: #6b7280;
+  color: var(--color-text-muted);
   text-align: center;
-  padding: 3rem 0;
+  padding: var(--space-12) 0;
 }
 
 .itemList {
   list-style: none;
   margin: 0;
   padding: 0;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
   overflow: hidden;
 }
 
 .summary {
-  margin-top: 1.5rem;
-  padding: 1.25rem 1rem;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
-  background: #f9fafb;
+  margin-top: var(--space-6);
+  padding: var(--space-5) var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-bg-secondary);
 }
 
 .totalRow {
@@ -46,49 +46,49 @@
   justify-content: space-between;
   align-items: center;
   font-size: 1rem;
-  color: #374151;
-  margin-bottom: 1rem;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-4);
 }
 
 .totalPrice {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   font-weight: 700;
-  color: #111827;
+  color: var(--color-text-primary);
 }
 
 .actions {
   display: flex;
   justify-content: flex-end;
-  gap: 0.75rem;
+  gap: var(--space-3);
 }
 
 .clearButton {
-  padding: 0.5rem 1rem;
-  border: 1px solid #d1d5db;
-  border-radius: 6px;
-  background: #fff;
-  color: #374151;
-  font-size: 0.9rem;
+  padding: var(--space-2) var(--space-4);
+  border: 1px solid var(--color-border-dark);
+  border-radius: var(--radius-sm);
+  background: var(--color-bg-primary);
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
   cursor: pointer;
-  transition: background-color 0.15s;
+  transition: background-color 0.15s ease;
 }
 
 .clearButton:hover {
-  background-color: #f3f4f6;
+  background-color: var(--color-bg-secondary);
 }
 
 .checkoutButton {
-  padding: 0.5rem 1.25rem;
+  padding: var(--space-2) var(--space-5);
   border: none;
-  border-radius: 6px;
-  background: #2563eb;
-  color: #fff;
-  font-size: 0.9rem;
+  border-radius: var(--radius-sm);
+  background: var(--color-primary);
+  color: #ffffff;
+  font-size: 0.875rem;
   font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.15s;
+  transition: opacity 0.2s ease;
 }
 
 .checkoutButton:hover {
-  background-color: #1d4ed8;
+  opacity: 0.85;
 }

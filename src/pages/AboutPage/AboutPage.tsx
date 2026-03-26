@@ -38,13 +38,13 @@ const AboutPage = () => {
           <address className={styles.contact}>
             <p className={styles.text}>Sorularınız için bizimle iletişime geçebilirsiniz:</p>
             <ul className={styles.contactList}>
-              <li>
+              <li className={styles.contactItem}>
                 <strong>E-posta:</strong>{" "}
                 <a href="mailto:info@example.com" className={styles.link}>
                   info@example.com
                 </a>
               </li>
-              <li>
+              <li className={styles.contactItem}>
                 <strong>Telefon:</strong> +90 (212) 555 0000
               </li>
             </ul>

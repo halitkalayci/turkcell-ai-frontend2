@@ -13,6 +13,7 @@ const Navbar = () => {
       <ul className={styles.navList}>
         <li><Link to="/" className={styles.navLink}>Ana Sayfa</Link></li>
         <li><Link to="/urunler" className={styles.navLink}>Ürünler</Link></li>
+        <li><Link to="/hakkimizda" className={styles.navLink}>Hakkımızda</Link></li>
         <li>
           <Link to="/sepet" className={styles.navLink}>
             Sepet
