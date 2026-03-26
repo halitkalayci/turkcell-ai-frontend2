@@ -8,13 +8,7 @@ description: >
 argument-hint: >
   Yapmak istediğin frontend işlemini detaylıca açıkla (örn: yeni bir ürün detay
   sayfası ekle, sepet state'i kur, ProductCard'ı refactor et).
-tools:
-  - read
-  - edit
-  - search
-  - execute
-  - todo
-  - agent
+tools: [execute, read, agent, edit, search, 'github/*', todo]
 ---
 
 ## Kimsin?
