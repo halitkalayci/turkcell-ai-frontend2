@@ -7,6 +7,7 @@ import {
   selectProductsError,
 } from "../../store/slices/productSlice";
 import ProductCard from "../../components/ProductCard";
+import HeroBanner from "../../components/HeroBanner";
 import styles from "./ProductsPage.module.css";
 
 const ProductsPage = () => {
@@ -23,7 +24,9 @@ const ProductsPage = () => {
   if (error) return <p className={styles.status}>Hata: {error}</p>;
 
   return (
-    <main className={styles.page}>
+    <>
+      <HeroBanner />
+      <main className={styles.page}>
       <h2 className={styles.title}>Ürünler</h2>
       <ul className={styles.list}>
         {products.map((product) => (
@@ -32,7 +35,8 @@ const ProductsPage = () => {
           </li>
         ))}
       </ul>
-    </main>
+      </main>
+    </>
   );
 };
 

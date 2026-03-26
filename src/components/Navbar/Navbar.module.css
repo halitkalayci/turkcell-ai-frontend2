@@ -1,52 +1,110 @@
 .navbar {
+  background-color: var(--color-bg-primary);
+  border-bottom: 1px solid var(--color-border);
+  padding: 0 var(--space-10);
+  height: 5rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 var(--space-8);
-  height: 3.75rem;
-  background-color: var(--color-bg-dark);
-  color: #ffffff;
+  gap: var(--space-10);
 }
 
 .brand {
-  color: #ffffff;
+  font-size: 1.75rem;
+  font-weight: 900;
+  color: var(--color-text-primary);
+  letter-spacing: -0.04em;
   text-decoration: none;
-  font-size: 1.25rem;
-  font-weight: 700;
-  letter-spacing: 0.5px;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .navList {
   display: flex;
-  gap: var(--space-8);
+  align-items: center;
+  gap: var(--space-6);
   list-style: none;
   margin: 0;
   padding: 0;
+  flex-shrink: 0;
 }
 
 .navLink {
-  color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-text-primary);
   text-decoration: none;
-  font-size: 0.875rem;
-  transition: color 0.2s ease;
+  transition: color 150ms ease;
 }
 
 .navLink:hover {
-  color: #ffffff;
+  color: var(--color-text-muted);
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex: 1;
+  background-color: var(--color-bg-input);
+  border-radius: var(--radius-full);
+  padding: var(--space-3) var(--space-4);
+  color: var(--color-text-muted);
+}
+
+.searchInput {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-family: var(--font-family);
+  color: var(--color-text-primary);
+}
+
+.searchInput::placeholder {
+  color: var(--color-text-muted);
+}
+
+.iconGroup {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-shrink: 0;
+}
+
+.iconButton {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: var(--color-text-primary);
+  text-decoration: none;
+}
+
+.iconButton:hover {
+  color: var(--color-text-muted);
 }
 
 .cartBadge {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 1.25rem;
-  height: 1.25rem;
-  margin-left: 0.35rem;
-  padding: 0 var(--space-1);
-  border-radius: var(--radius-full);
+  position: absolute;
+  top: -0.375rem;
+  right: -0.375rem;
   background-color: var(--color-accent);
   color: var(--color-primary);
-  font-size: 0.75rem;
+  font-size: 0.625rem;
   font-weight: 700;
-  vertical-align: middle;
+  min-width: 1rem;
+  height: 1rem;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
 }
