@@ -2,7 +2,7 @@ import type { Product } from "../types/product";
 
 const products: Product[] = [
   {
-    id: 1,
+    id: 'a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d',
     name: "Akıllı Telefon X",
     price: 22499,
     originalPrice: 24999,
@@ -12,7 +12,7 @@ const products: Product[] = [
     reviewCount: 97,
   },
   {
-    id: 2,
+    id: 'b2c3d4e5-f6a7-4b8c-9d0e-1f2a3b4c5d6e',
     name: "Kablosuz Kulaklık Pro",
     price: 2799,
     originalPrice: 3499,
@@ -22,7 +22,7 @@ const products: Product[] = [
     reviewCount: 64,
   },
   {
-    id: 3,
+    id: 'c3d4e5f6-a7b8-4c9d-0e1f-2a3b4c5d6e7f',
     name: "Laptop Ultra 15",
     price: 47699,
     originalPrice: 52999,
@@ -32,7 +32,7 @@ const products: Product[] = [
     reviewCount: 152,
   },
   {
-    id: 4,
+    id: 'd4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f80',
     name: "Tablet S10",
     price: 15937,
     originalPrice: 18750,
@@ -42,7 +42,7 @@ const products: Product[] = [
     reviewCount: 38,
   },
   {
-    id: 5,
+    id: 'e5f6a7b8-c9d0-4e1f-2a3b-4c5d6e7f8091',
     name: "Akıllı Saat Z",
     price: 7649,
     originalPrice: 8999,
@@ -52,7 +52,7 @@ const products: Product[] = [
     reviewCount: 45,
   },
   {
-    id: 6,
+    id: 'f6a7b8c9-d0e1-4f2a-3b4c-5d6e7f809102',
     name: "Bluetooth Hoparlör",
     price: 1039,
     originalPrice: 1299,
